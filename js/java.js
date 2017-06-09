@@ -1,4 +1,4 @@
-function(){
+
 var choices = ["DOG","BOOK","BAG","SHOP","APPLE","HOUSE","LIBRARY","OFFICE"];
 var randWord;
 var correct_space = '';
@@ -29,6 +29,7 @@ function start() {
 
     document.querySelector('#wrong').value = '';
     document.querySelector(".message-div").style.top = "-150px";
+    document.querySelector('#image').src = "images/hm1.gif";
 
     randWord = choices[Math.floor(Math.random() * choices.length)];
     for(var i = 0 ; i < randWord.length ; i++){
@@ -105,6 +106,3 @@ function reset(){
   correct_space = '';
   wrong = 0;
 }
-
-
-}();
